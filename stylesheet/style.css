@@ -103,17 +103,17 @@ a:hover, a:focus { text-decoration: none; }
 .work-masterpiece { background-color: #F9F9F9; /* medium - display 2  */ /* large - display 3 */ }
 .work-masterpiece .carousel-inner { width: 90%; margin-left: auto; }
 .work-masterpiece .carousel-inner .carousel-item { display: flex; justify-content: space-between; align-items: flex-end; overflow: hidden; }
-.work-masterpiece .carousel-inner .card { width: 30%; margin: 1rem; overflow: hidden; background-color: #fff; text-align: right; background: transparent; backface-visibility: hidden; }
+.work-masterpiece .carousel-inner .card { flex: 0 0 28.33%; max-width: 28.33%; backface-visibility: hidden; margin: 1rem; overflow: hidden; background-color: #fff; text-align: right; background: transparent; }
+.work-masterpiece .carousel-inner .card .card-img { position: relative; border: 4px solid #FCA600; border-radius: 0; }
+.work-masterpiece .carousel-inner .card .card-img .img-overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center; }
+.work-masterpiece .carousel-inner .card .card-img .img-overlay a { display: flex; flex-wrap: nowrap; justify-content: center; color: #1B1718; background-color: #FCA600; width: 100%; border-radius: 0; }
+.work-masterpiece .carousel-inner .card .card-img .img-overlay a svg { width: 1.5rem; height: 1.5rem; margin-left: 0.5rem; border-radius: 1px; }
 .work-masterpiece .carousel-inner .card .card-body { padding: 0; }
 .work-masterpiece .carousel-inner .card .card-body .card-title { margin: 1rem 0 0 0; font-size: 1rem; }
 .work-masterpiece .carousel-inner .card .card-body .card-text { font-size: 0.7rem; }
-.work-masterpiece .carousel-inner .card:first-child { width: 40%; backface-visibility: hidden; }
-.work-masterpiece .carousel-inner .card:first-child .card-img { position: relative; border: 4px solid #FCA600; border-radius: 0; }
-.work-masterpiece .carousel-inner .card:first-child .card-img .img-overlay { position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: flex; justify-content: center; align-items: center; }
-.work-masterpiece .carousel-inner .card:first-child .card-img .img-overlay a { display: flex; flex-wrap: nowrap; justify-content: center; color: #1B1718; background-color: #FCA600; width: 100%; border-radius: 0; }
-.work-masterpiece .carousel-inner .card:first-child .card-img .img-overlay a svg { width: 1.5rem; height: 1.5rem; margin-left: 0.5rem; border-radius: 1px; }
-.work-masterpiece .carousel-inner .card:first-child .card-title { font-size: 1.3rem; line-height: 0.8; }
-.work-masterpiece .carousel-inner .card:first-child .card-text { font-size: 0.8rem; margin-top: 5px; }
+.work-masterpiece .carousel-inner .carousel-item .card:first-child { flex: 0 0 34.33%; max-width: 34.33%; }
+.work-masterpiece .carousel-inner .carousel-item .card:first-child .card-body .card-title { font-size: 1.3rem; line-height: 0.8; }
+.work-masterpiece .carousel-inner .carousel-item .card:first-child .card-body .card-text { font-size: 0.8rem; margin-top: 5px; }
 .work-masterpiece .slider-ctrl { position: absolute; top: 1.5rem; right: 1rem; z-index: 10; }
 .work-masterpiece .slider-ctrl a { background-color: #1B1718; padding: 0.25rem 0.5rem; border-radius: 0; transition: all 500ms; }
 .work-masterpiece .slider-ctrl a svg { color: #fff; width: 1.5rem; height: 1.5rem; transition: all 500ms; }
@@ -124,16 +124,14 @@ a:hover, a:focus { text-decoration: none; }
 .work-masterpiece .slider-ctrl a:active { box-shadow: none; background-color: #1B1718; transition: all 1s; }
 @media (min-width: 768px) { .work-masterpiece .carousel-inner .carousel-item-right.active, .work-masterpiece .carousel-inner .carousel-item-next { transform: translateX(50%); }
   .work-masterpiece .carousel-inner .carousel-item-left.active, .work-masterpiece .carousel-inner .carousel-item-prev { transform: translateX(-50%); } }
-@media (min-width: 992px) { .work-masterpiece .carousel-inner .carousel-item-right.active, .work-masterpiece .carousel-inner .carousel-item-next { transform: translateX(30.15%); }
-  .work-masterpiece .carousel-inner .carousel-item-left.active, .work-masterpiece .carousel-inner .carousel-item-prev { transform: translateX(-30.15%); } }
+@media (min-width: 992px) { .work-masterpiece .carousel-inner .carousel-item-right.active, .work-masterpiece .carousel-inner .carousel-item-next { transform: translateX(33%); }
+  .work-masterpiece .carousel-inner .carousel-item-left.active, .work-masterpiece .carousel-inner .carousel-item-prev { transform: translateX(-33%); } }
 @media (max-width: 768px) { .work-masterpiece .carousel-inner .carousel-item > div { display: block; }
   .work-masterpiece .carousel-inner .carousel-item > div:first-child { display: block; }
   .work-masterpiece .carousel-control-next, .work-masterpiece .carousel-control-prev { top: 42%; bottom: 42%; width: 2.5rem; } }
-@media (max-width: 551px) { .work-masterpiece .carousel-inner .carousel-item-right.active, .work-masterpiece .carousel-inner .carousel-item-next { transform: translateX(100%); }
-  .work-masterpiece .carousel-inner .carousel-item-left.active, .work-masterpiece .carousel-inner .carousel-item-prev { transform: translateX(-100%); }
-  .work-masterpiece .carousel-inner .carousel-item > div { display: none; }
+@media (max-width: 551px) { .work-masterpiece .carousel-inner .carousel-item > div { display: none; }
   .work-masterpiece .carousel-inner .carousel-item > div:first-child { display: block; } }
-.work-masterpiece .carousel-inner .carousel-item.active, .work-masterpiece .carousel-inner .carousel-item-next, .work-masterpiece .carousel-inner .carousel-item-prev { display: flex; justify-content: flex-end; }
+.work-masterpiece .carousel-inner .carousel-item.active, .work-masterpiece .carousel-inner .carousel-item-next, .work-masterpiece .carousel-inner .carousel-item-prev { display: flex; }
 .work-masterpiece .carousel-inner .carousel-item-right, .work-masterpiece .carousel-inner .carousel-item-left { transform: translateX(0); }
 
 /**** LATEST NEWS ****/
@@ -158,7 +156,7 @@ a:hover, a:focus { text-decoration: none; }
 .testimonials .section-header .slider-nav-btn a:focus { box-shadow: none; background-color: #2E2E2E; }
 .testimonials .section-header .slider-nav-btn a:focus svg { color: #FCA600; }
 .testimonials .section-header .slider-nav-btn a:active { box-shadow: none; background-color: #1B1718; transition: all 1s; }
-.testimonials .carousel-inner .card { transition: all 500ms; width: 32%; backface-visibility: hidden; overflow: hidden; }
+.testimonials .carousel-inner .card { transition: all 500ms; flex: 0 0 31.80%; max-width: 31.80%; margin: 0.8rem; backface-visibility: hidden; overflow: hidden; }
 .testimonials .carousel-inner .card .card-body .card-text { border-left: 2px solid #ddd; padding-left: 1rem; }
 .testimonials .carousel-inner .card .card-footer { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; background: transparent; border-top: 0; }
 .testimonials .carousel-inner .card .card-footer .user-profile { display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: center; }
@@ -360,6 +358,7 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
 .project-details-page .work-masterpiece .carousel-inner .card:hover .card-body .card-title { color: #fff; }
 .project-details-page .work-masterpiece .carousel-inner .card:first-child .card-body { padding: 1.1rem; }
 .project-details-page .work-masterpiece .carousel-inner .card:first-child .card-body .card-title { font-size: 1.1rem; }
+.project-details-page .work-masterpiece .slider-ctrl { top: 0.7rem; right: 0; }
 .project-details-page .work-masterpiece .slider-ctrl a { background-color: #FCA600; }
 .project-details-page .work-masterpiece .slider-ctrl a svg { color: #fff; }
 .project-details-page .work-masterpiece .slider-ctrl a:hover, .project-details-page .work-masterpiece .slider-ctrl a:focus { background-color: #1B1718; }
@@ -432,11 +431,11 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .esquare-intro .experience-intro { width: 100%; }
   .esquare-intro .experience-intro h3 { font-size: 5rem; }
   .work-masterpiece .carousel-inner { width: 100%; }
-  .work-masterpiece .carousel-inner .card:first-child { width: 100%; }
+  .work-masterpiece .carousel-inner .carousel-item .card:first-child { flex: 0 0 100%; max-width: 100%; }
   .work-masterpiece .carousel-inner .card { width: 100%; margin: 0; }
   .latest-news .e-uniq { margin-top: 0rem; }
   .latest-news .e-uniq .card { margin: 1.5rem 0; }
-  .testimonials .carousel-inner .card { width: 100%; }
+  .testimonials .carousel-inner .card { flex: 0 0 100%; max-width: 100%; margin: 1rem 0; }
   .testimonials .section-header div > span { height: 1.7rem; font-size: 3rem; }
   .testimonials .section-header .slider-nav-btn { margin: 0.5rem 0 0 0; }
   .about-page .esquare-intro .short-intro { width: 100%; }
@@ -491,6 +490,7 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .esquare-intro .experience-intro { width: 44%; }
   .work-masterpiece .carousel-inner { width: 100%; }
   .work-masterpiece .carousel-inner .card { margin: 0.5rem; }
+  .work-masterpiece .carousel-inner .carousel-item .card:first-child { flex: 0 0 36.33%; max-width: 36.33%; }
   .testimonials .carousel-inner .card .card-footer .star-rating { margin-top: 1rem; }
   .tax-benefits .tax-thumbnail .tax-details .card-body { height: 16rem; }
   .tax-benefits .tax-thumbnail .tax-photo .card-img-overlay .card-title { font-size: 1.2rem; }
@@ -509,7 +509,8 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .news-section .news-thumbnail { padding: 0.5rem 0; }
   .news-section .news-thumbnail .news-details { width: 50%; }
   .news-section .news-thumbnail .news-details .card-title { font-size: 1.5rem; }
-  .news-section .news-thumbnail .article-photo { width: 50%; } }
+  .news-section .news-thumbnail .article-photo { width: 50%; }
+  .testimonials .carousel-inner .card { flex: 0 0 30.52%; max-width: 30.52%; margin: 0 0.8rem 0.8rem; } }
 @media only screen and (min-width: 1021px) and (max-width: 1260px) { .navbar { padding: 0rem 0.5rem; }
   .navbar .navbar-nav .nav-item:last-child .nav-link { padding: 1rem 0.5rem; }
   .navbar .navbar-nav .nav-item:last-child .nav-link:after { bottom: 0.5rem; }
@@ -526,6 +527,8 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .project-details-page .floor-plan .section-header ul li { width: 5rem; }
   .project-details-page .floor-plan .section-header ul li p { height: 2.5rem; }
   .project-details-page .floor-plan .section-header ul li:last-child p:first-child { font-size: 0.6rem; }
-  .tax-benefits .tax-thumbnail .tax-details .card-body { height: 20rem; } }
+  .tax-benefits .tax-thumbnail .tax-details .card-body { height: 20rem; }
+  .testimonials .carousel-inner .card { flex: 0 0 31%; max-width: 31%; margin: 0.9rem; }
+  .work-masterpiece .slider-ctrl { top: 0.5rem; right: 0rem; } }
 
 /*# sourceMappingURL=style.css.map */
