@@ -434,6 +434,7 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .work-masterpiece .carousel-inner .carousel-item .card:first-child { flex: 0 0 100%; max-width: 100%; }
   .work-masterpiece .carousel-inner .carousel-item .card { flex: 0 0 100%; max-width: 100%; }
   .work-masterpiece .carousel-inner .card { width: 100%; margin: 0; }
+  .work-masterpiece .carousel-inner .carousel-item .card .img-fluid { width: 100%; }
   .latest-news .e-uniq { margin-top: 0rem; }
   .latest-news .e-uniq .card { margin: 1.5rem 0; }
   .testimonials .carousel-inner .card { flex: 0 0 100%; max-width: 100%; margin: 1rem 0; }
