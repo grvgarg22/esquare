@@ -416,6 +416,7 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .page-mast-head .card-img-overlay .page-title:before { margin: 3.2rem auto -3.2rem; }
   footer { margin: 0; padding: 2rem 1rem 1rem; }
   footer ul li { margin: 0.5rem 1rem 0.5rem 0; float: left; }
+  .footer-ftr p { margin-top: 0.5rem; }
   .home_main_slider .main_slider_header { margin: 0; }
   .home_main_slider .main_slider_header .main_slider_controls p { font-size: 1.5rem; }
   .home_main_slider .main_slider_header .slider-nav-btn { margin: 0 0.75rem; }
@@ -461,6 +462,9 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .project-details-page .floor-plan .row { flex-direction: column-reverse; }
   .project-details-page .floor-plan .section-header .section-title-md { width: 100%; }
   .project-details-page .floor-plan .section-header ul { flex-wrap: wrap; justify-content: space-around; }
+  .project-details-page .floor-plan .section-header ul li { width: 4.7rem; margin: 0.3rem; }
+  .project-details-page .floor-plan .section-header ul li:last-child p:first-child { font-size: 0.8rem; line-height: 1; padding: 0.85rem; }
+  .project-details-page .floor-plan .section-header ul li p { height: 2.5rem; }
   .project-details-page .work-masterpiece .section-header p { margin: 0 0 0.5rem; }
   .tour-3d-page .tour-tabs .nav.nav-pills { margin-bottom: 1rem; }
   .tour-3d-page .tour-tabs .nav.nav-pills .nav-link.active { font-size: 1.5rem; }
@@ -498,9 +502,9 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #FCA600; w
   .tax-benefits .tax-thumbnail .tax-photo .card-img-overlay .card-title { font-size: 1.2rem; }
   .project-details-page .floor-plan .section-header .section-title-md { width: 100%; margin-bottom: 1rem; }
   .project-details-page .floor-plan .section-header ul { flex-wrap: wrap; justify-content: space-around; }
-  .project-details-page .floor-plan .section-header ul li { width: 5rem; }
+  .project-details-page .floor-plan .section-header ul li { width: 4.7rem; margin: 0.4rem; }
+  .project-details-page .floor-plan .section-header ul li:last-child p:first-child { font-size: 0.8rem; line-height: 1; padding: 0.85rem; }
   .project-details-page .floor-plan .section-header ul li p { height: 2.5rem; }
-  .project-details-page .floor-plan .section-header ul li:last-child p:first-child { font-size: 0.6rem; }
   .tour-3d-page .tour-tabs .nav.nav-pills .nav-link { font-size: 1rem; }
   .tour-3d-page .tour-tabs .nav.nav-pills .nav-link.active { font-size: 1.5rem; }
   .about-page .esquare-intro .short-intro { width: 50%; }
